@@ -32,11 +32,11 @@
                             <i class="fa-solid fa-angle-down"></i>
                         </div>
                         <div class="list-categories">
-                            <a href="">Vanilla Flavour</a>
-                            <a href="">Chocolate Flavour</a>
-                            <a href="">Mint Flavour</a>
-                            <a href="">Fruit Flavour</a>
-                            <a href="">Vegan Flavour</a>
+                            <a href="./vanilla.html">Vanilla Flavour</a>
+                            <a href="./chocolate.html">Chocolate Flavour</a>
+                            <a href="./mint.html">Mint Flavour</a>
+                            <a href="./fruit.html">Fruit Flavour</a>
+                            <a href="./vegan.html">Vegan Flavour</a>
                         </div>
                     </li>
                 </ul>
@@ -46,7 +46,7 @@
                 <div class="cart_no">
                     <a href="">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <small><span>0</span></small>
+                        <small><span class="totalItem">0</span></small>
                     </a>
                 </div>
                 <div class="burger">
@@ -60,64 +60,6 @@
         <section>
             <div class="cart_items">
                 <div class="all_items">
-                    <div class="cart_list">
-                        <div class="cart_details">
-                            <div class="cart_img">
-                                <img src="" alt="">
-                            </div>
-                            <div class="cart_info">
-                                <h3></h3>
-                                <p></p>
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="cart_quantity">
-                            <div class="delete">
-                                <span>Delete</span>
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                            <div class="quantity">
-                                <div class="minus">
-                                    <span>-</span>
-                                </div>
-                                <div class="number">
-                                    <span>1</span>
-                                </div>
-                                <div class="add">
-                                    <span>+</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart_list">
-                        <div class="cart_details">
-                            <div class="cart_img">
-                                <img src="" alt="">
-                            </div>
-                            <div class="cart_info">
-                                <h3></h3>
-                                <p></p>
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="cart_quantity">
-                            <div class="delete">
-                                <span>Delete</span>
-                                <i class="fa-solid fa-trash"></i>
-                            </div>
-                            <div class="quantity">
-                                <div class="minus">
-                                    <span>-</span>
-                                </div>
-                                <div class="number">
-                                    <span>1</span>
-                                </div>
-                                <div class="add">
-                                    <span>+</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="cart_checkout">
@@ -130,10 +72,10 @@
                     </div>
                     <div class="cart_total">
                         <span>Total</span>
-                        <span>N5000</span>
+                        <span class="totalCount"></span>
                     </div>
                     <div class="cart_checkout_btn">
-                        <button>Checkout (N5000)</button>
+                        <button class="btnCheck"></button>
                     </div>
                 </div>
             </div>
@@ -206,6 +148,8 @@
             <p>Copyright &copy; of Firstie Deluxe</p>
         </div>
     </footer>
+
+    <script src="./javascript/checkout.js"></script>
 </body>
 
 </html>

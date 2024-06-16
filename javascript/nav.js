@@ -9,5 +9,4 @@ burger.addEventListener('click', () => {
     else {
         sidemenu.style.bottom = '-100vh'
     }
-    hfdhfgf
 })
