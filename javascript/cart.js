@@ -1,5 +1,13 @@
 let btnCart = document.querySelectorAll('.addCart');
-const cartItem = []
+let cartItem = [];
+
+// Check if there is item in localstorage
+if(localStorage.getItem('cart_items')) {
+    cartItem = JSON.parse(localStorage.getItem('cart_items'));
+    
+    // Update cart quantity length
+    document.querySelector('.totalItem').textContent = cartItem.length
+}
 
 btnCart.forEach((button) => {
     button.addEventListener('click', (event) => {

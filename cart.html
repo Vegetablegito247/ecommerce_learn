@@ -21,10 +21,10 @@
             <div class="sidemenu">
                 <ul>
                     <li>
-                        <a href="">Ice-cream</a>
+                        <a href="./icecream.html">Ice-cream</a>
                     </li>
                     <li>
-                        <a href="">Cakes</a>
+                        <a href="./cake.html">Cakes</a>
                     </li>
                     <li class="drop_down">
                         <div class="categories">
@@ -60,6 +60,10 @@
         <section>
             <div class="cart_items">
                 <div class="all_items">
+                    <div class="no_cart">
+                        <h3>Your cart is empty</h3>
+                        <button>Go to menu</button>
+                    </div>
                 </div>
 
                 <div class="cart_checkout">
@@ -68,7 +72,7 @@
                     </div>
                     <div class="cart_item_length">
                         <span>Items:</span>
-                        <span>2</span>
+                        <span id="checkout_length"></span>
                     </div>
                     <div class="cart_total">
                         <span>Total</span>
@@ -82,14 +86,17 @@
         </section>
         <div class="pop_form">
             <form action="" class="frm_email">
+                <div class="close-form">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
                 <div class="frm_inps">
                     <div class="inp_ctrl">
                         <label for="">Email address:</label>
-                        <input type="email" placeholder="email247@gmail.com">
+                        <input type="email" placeholder="email247@gmail.com" id="email" required>
                     </div>
                 </div>
                 <div class="frm_btn">
-                    <button>Proceed to order</button>
+                    <button id="subForm">Proceed to order</button>
                 </div>
             </form>
         </div>
@@ -150,6 +157,8 @@
     </footer>
 
     <script src="./javascript/checkout.js"></script>
+    <script src="./javascript/nav.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
 </body>
 
 </html>
